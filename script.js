@@ -47,49 +47,49 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     //modal
-    
-        // Details Modal
-        const modal = document.getElementById('modal');
-        const modalContent = document.querySelector('.modal-content');
-        const closeModalBtn = document.querySelector('.close-btn');
-        const projectCards = document.querySelectorAll('.project-card');
-    
-        projectCards.forEach(card => {
-            const detailsBtn = card.querySelector('.modal-btn');
-            detailsBtn.addEventListener('click', function() {
-                const title = card.querySelector('.project-title').textContent;
-                const description = card.querySelector('.project-description').textContent;
-                const technologies = card.dataset.tech.split(',');
-                const techList = technologies.map(tech => `<li>${tech.trim()}</li>`).join('');
-                const githubLink = card.dataset.github;
-                const demoLink = card.dataset.demo;
-    
-                modalContent.innerHTML = `
-                    <span class="close-btn">&times;</span>
-                    <h2>${title}</h2>
-                    <p>${description}</p>
-                    <p>Technologies Used:</p>
-                    <ul class="technologies-used">
-                        ${techList}
-                    </ul>
-                    <div class="project-links">
-                        <a href="${githubLink}" class="github-link">GitHub</a>
-                        <a href="${demoLink}" class="demo-link">Live Demo</a>
-                    </div>
-                `;
-                modal.style.display = 'block';
-            });
-        });
-    
-        closeModalBtn.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
-    
-        window.addEventListener('click', function(event) {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
+    // Details Modal
+const modal = document.getElementById('modal');
+const modalContent = document.querySelector('.modal-content');
+const closeModalBtn = document.querySelector('.close-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach(card => {
+    const detailsBtn = card.querySelector('.modal-btn');
+    detailsBtn.addEventListener('click', function() {
+        const title = card.querySelector('.project-title').textContent;
+        const description = card.querySelector('.project-description').textContent;
+        const technologies = card.dataset.tech.split(',');
+        const techList = technologies.map(tech => `<li>${tech.trim()}</li>`).join('');
+        const githubLink = card.dataset.github;
+        const demoLink = card.dataset.demo;
+
+        modalContent.innerHTML = `
+            <span class="close-btn">&times;</span>
+            <h2>${title}</h2>
+            <p>${description}</p>
+            <p>Technologies Used:</p>
+            <ul class="technologies-used">
+                ${techList}
+            </ul>
+            <div class="project-links">
+                <a href="${githubLink}" class="github-link" target="_blank">GitHub</a>
+                <a href="${demoLink}" class="demo-link" target="_blank">Live Demo</a>
+            </div>
+        `;
+        
+        modal.style.display = 'block';
+    });
+});
+
+closeModalBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
 
 
     // Skills Section

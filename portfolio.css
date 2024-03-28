@@ -551,7 +551,7 @@ section.about p {
 
 
 section.services {
-    background: rgb(17, 17, 17);
+    background: #e0f2f1;
 }
 .services-head {
     color: rgb(10, 9, 9);
@@ -562,7 +562,7 @@ section.services {
     font-size: 1.8rem;
 }
 .services-head + p {
-    color: var(--white);
+    color:#333;
     font-family: "lato", sans-serif;
     margin-bottom: 1rem;
     text-align: center;
