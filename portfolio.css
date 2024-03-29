@@ -25,9 +25,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #023E8A; /* Dark blue background */
+    background-color: #023E8A; 
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .navigation-links ul {
@@ -39,7 +39,7 @@ body {
 }
 
 .navigation-links ul li {
-    margin: 0 15px; /* Increase spacing between navigation items */
+    margin: 0 15px; 
 }
 
 .navigation-links ul li a {
@@ -52,12 +52,11 @@ body {
 }
 
 .navigation-links ul li a:hover {
-    background-color: #1F65A0; /* Darker blue on hover */
+    background-color: #1F65A0; 
 }
 
 
 /* Hero section styles */
-
 .hero-content {
     display: flex;
     flex-direction: column; /* Align items vertically */
@@ -191,12 +190,9 @@ body {
 
 
 /* skills styles */
-
-/* Skills Section */
 #skills {
     background-color: #f1f5f8;
-    padding: 50px 0;
-    
+    padding: 50px 0;   
 }
 
 .skill-bars {
@@ -313,9 +309,6 @@ body {
     background-color: rgba(0, 255, 196, 0.7); 
 }
 
-
-
-/* Contact section styles */
 /* Contact Form Section Styles */
 
 #contact {
@@ -364,7 +357,6 @@ button[type="submit"] {
     width: 100%;
     font-size: 1rem;
 } 
-
 
 /* Optional: Add some hover effects to form inputs */
 input[type="text"]:hover,
@@ -439,8 +431,7 @@ textarea:focus {
     cursor: pointer;
 }
 
-
-/* about & service styles */
+/* about me & service styles */
 :root{
     --primary:rgb(29, 221, 189);
     --bgDark:rgb(12, 12, 12);
@@ -448,7 +439,6 @@ textarea:focus {
     --secondary:rgb(0, 59, 50);
     --bgLight:rgb(190, 181, 181);
 }
-
 
 .hero{
     padding-top: 2rem;
@@ -548,18 +538,15 @@ section.about p {
     margin-bottom: 2rem;
 }
 
-
-
 section.services {
-    background: #e0f2f1;
+    background:#e0f2f1;
 }
 .services-head {
-    color: rgb(10, 9, 9);
+    font-size: 1.6rem;
     text-align: center;
     margin-bottom: 1rem;
     line-height: 0.5rem;
-    color: var(--primary);
-    font-size: 1.8rem;
+    color:#333
 }
 .services-head + p {
     color:#333;
@@ -595,7 +582,7 @@ section.services .card-grid .card img {
 }
 section.services .card-grid .card h2 {
     font-weight: 600;
-    font-size: 1,2rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 section.services .card-grid .card p {
